@@ -11,5 +11,7 @@ RUN \
     udev ttf-opensans chromium git openssh \
   && rm -rf /var/cache/apk/* /tmp/*
 
+RUN npm install lerna -g
+
 ENV CHROME_BIN /usr/bin/chromium-browser
 ENV LIGHTHOUSE_CHROMIUM_PATH /usr/bin/chromium-browser
